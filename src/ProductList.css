@@ -1,10 +1,8 @@
-/* Reset some default styles */
 body, h1, ul {
     margin: 0;
     padding: 0;
 }
 
-/* Set a background color */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -57,7 +55,6 @@ body {
     cursor: pointer;
 }
 
-/* Product Grid */
 .product-grid {
     display: flex;
     flex-direction: column;
@@ -75,7 +72,6 @@ body {
     margin: 0 auto;
 }
 
-/* Product Card */
 .product-card {
     width: 100%;
     margin: 0;
@@ -92,7 +88,6 @@ body {
     gap: 10px;
 }
 
-/* Pseudo-classes - Hover effect on product button */
 .product-card:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
@@ -132,7 +127,6 @@ body {
     background-color: #c0392b;
 }
 
-/* Pseudo-elements - Sale badge */
 .product-card::before {
     content: "SALE";
     background-color: #e74c3c;
@@ -145,7 +139,6 @@ body {
 }
 .tag_home_link{
     display: flex;
-    /* background-color: red; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -209,17 +202,16 @@ body {
 
     
 }
-/* Add Media Query for responsiveness */
 @media (max-width: 768px) {
     .product-card {
-        flex: 1 1 calc(50% - 20px); /* Adjust width for 2 cards per row with 20px gap on smaller screens */
-        max-width: calc(50% - 20px); /* Adjust max-width for 2 cards per row with 20px gap on smaller screens */
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
     }
 }
 /* ProductList.css */
 
 .product-button {
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50;
     border: none;
     color: white;
     padding: 10px 20px;
@@ -237,7 +229,7 @@ body {
   }
   
   .product-button.added-to-cart {
-    background-color: grey; /* Grey when product is added */
+    background-color: grey;
   }
   @media (max-width: 1024px) {
     .product-list {
@@ -250,26 +242,25 @@ body {
       grid-template-columns: 1fr;
     }
     .product-card {
-      flex: 1 1 calc(50% - 20px); /* Adjust width for 2 cards per row with 20px gap on small screens */
-      max-width: calc(50% - 20px); /* Adjust max-width for 2 cards per row with 20px gap on small screens */
+      flex: 1 1 calc(50% - 20px); 
+      max-width: calc(50% - 20px); 
     }
     .navbar {
-        flex-direction: column; /* Change flex direction to stack items vertically */
-        align-items: center; /* Align items to the center of the container */
+        flex-direction: column; 
+        align-items: center; 
       }
     
       .tag {
-        margin-bottom: 20px; /* Add margin bottom for spacing */
-        text-align: center; /* Align text to the center */
+        margin-bottom: 20px;
+        text-align: center; 
       }
     
       .ul {
-        display: flex; /* Set display to flex */
-        flex-direction: column; /* Change flex direction to stack items vertically */
-        gap: 10px; /* Add gap between items */
+        display: flex; 
+        flex-direction: column; 
       }
     
       .ul div {
-        text-align: center; /* Align text to the center */
+        text-align: center;
       }
   }

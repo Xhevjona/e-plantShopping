@@ -9,7 +9,6 @@ function ProductList({ onHomeClick }) {
     const dispatch = useDispatch();
     const cartItems = useSelector(state => state.cart.items);
 
-    // ✅ FIX: show plants by default
     const [showCart, setShowCart] = useState(false);
     const [showPlants, setShowPlants] = useState(true);
     const [addedToCart, setAddedToCart] = useState({});
@@ -223,7 +222,6 @@ function ProductList({ onHomeClick }) {
         }
     ];
 
-    // Flatten the plantsArray to get all plants in one array
     const allPlants = plantsArray.flatMap(category => category.plants);
 
     const styleObj = {
@@ -281,7 +279,6 @@ function ProductList({ onHomeClick }) {
 
     return (
         <div>
-            {/* NAVBAR */}
             <div className="navbar">
                 <h2 onClick={handleHomeClick}>Paradise Nursery</h2>
                 <button onClick={handlePlantsClick} className="navbar-center">Plants</button>
@@ -290,7 +287,6 @@ function ProductList({ onHomeClick }) {
                 </button>
             </div>
 
-            {/* CONTENT */}
             {showPlants && !showCart ? (
                 <div className="product-grid">
                     <div className="product-list">
